@@ -17,6 +17,6 @@ app.use('/api/notes',require('./routes/notes'));
 
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Example app listening on port ${port} and you can connect using http://localhost:27017/api/auth`)
 })
 
