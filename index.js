@@ -5,9 +5,11 @@ connectToMongo();
 const express = require('express')
 const app = express()
 const port = 5000;
+const cors = require('cors');
 
 
 // If you want to use req.body you have to use middle-ware here:
+app.use(cors());
 app.use(express.json());
 
 // Available Routes:
